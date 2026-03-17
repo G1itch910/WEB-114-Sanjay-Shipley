@@ -25,3 +25,9 @@ if (hoursWorked > 40) {
 } else {
     console.log("No overtime this week.");
 }
+
+if (netPay > 800) {
+    console.log("Whoa, you made over $800 this week!")
+} else {
+    console.log("Looks like you didn't make over $800, keep working at it!")
+}

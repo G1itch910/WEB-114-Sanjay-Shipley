@@ -1,0 +1,35 @@
+<!-- Sanjay Shipley April 17th 2026 -->
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="moods.css">
+</head>
+<body>
+    <section>
+        <h1>Project 7 - Mood Changer</h1>
+        <br>
+        <b>1. Why is textContent safer than innerHTML?</b> <br>
+            <br>
+            <p>innerHTML inserts the text as HTML, with the tags, and textContent inserts it as text, with all symbols treated literally.</p>
+            <p>Additionally, if you were to use innerHTML to get input from somebody else, they could add in malicious code to the site.</p><br>
+        <b>2. How are HTML elements connected to JavaScript variables using DOM selection?</b> <br>
+            <p>using the document.getElementById or document.querySelector functions can directly connect the JavaScript of a page to the HTMl, allowing for the backend to do quick processing and change the page accordingly</p>
+            <br>
+        <b>3. What would happen to the text box with id="text" if I added this line to the code above it: text.textContent = "Hello!"</b><br>
+            <p>the text box would change to have the text "Hello!", as long as the text object is a reference to the proper element</p>
+            <br>
+            <br>
+    </section>
+
+    <h2 id="mood-title">Choose a mood</h2>
+    <p>click a mood to change this page's theme!</p>
+    <div id="buttons">
+        <!-- contains all of the buttons that the user interacts with -->
+        <button class="mood-btn" data-mood="happy">Happy</button>
+        <button class="mood-btn" data-mood="calm">Calm</button>
+        <button class="mood-btn" data-mood="excited">Excited</button>
+        <button class="mood-btn" data-mood="chill">Chill</button>
+        <button class="mood-btn" data-mood="mysterious">Mysterious</button>
+    </div>
+    <p id="message">No message yet..</p>
+    <script src="moods.js" defer></script>
+</body>
